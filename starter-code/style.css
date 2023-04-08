@@ -149,11 +149,19 @@ select {
 }
 
 .grid-container {
+  text-align: center;
   display: grid;
+  place-items: center;
+  padding-inline: 1rem;
+}
+
+.grid-container * {
+  max-width: 50ch;
 }
 
 @media (min-width: 45em) {
   .grid-container {
+    text-align: left;
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(
         2rem,
@@ -167,6 +175,11 @@ select {
 
   .grid-container > *:last-child {
     grid-column: 3;
+  }
+
+  .grid-container--home {
+    padding-bottom: 6rem;
+    align-items: end;
   }
 }
 
@@ -280,6 +293,7 @@ select {
 /* ------------------- */
 
 .large-button {
+  font-size: 2rem;
   position: relative;
   z-index: 1;
   display: inline-grid;
@@ -309,11 +323,29 @@ select {
 }
 
 .primary-navigation {
-  --gap: 8rem;
   --underline-gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 35rem) {
+  .primary-navigation {
+    --underline-gap: .5rem;
+    position: fixed;
+    background: black;
+    inset: 0 0 0 30%;
+    z-index: 1000;
+    list-style: none;
+    padding: min(20rem, 15vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .primary-navigation.underline-indicators > .active {
+    border: 0;
+
+  }
 }
 
 .primary-navigation a {
@@ -388,6 +420,28 @@ select {
   color: hsl(var(--clr-dark));
 }
 
+/* ------------------- */
+/* Page Specific background */
+/* ------------------- */
 
+body {
+  background-position: bottom center;
+  background-size: cover;
+}
 
+.home {
+  background-image: url(./assets/home/background-home-mobile.jpg);
+}
 
+@media (min-width: 35em) {
+  .home {
+    background-position: center center;
+    background-image: url(./assets/home/background-home-tablet.jpg);
+  }
+}
+
+@media (min-width: 45em) {
+  .home {
+    background-image: url(./assets/home/background-home-desktop.jpg);
+  }
+}
