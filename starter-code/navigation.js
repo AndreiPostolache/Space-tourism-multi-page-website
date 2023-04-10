@@ -12,3 +12,5 @@ navToggle.addEventListener("click", function () {
     navToggle.style.backgroundImage = "url(./assets/shared/icon-hamburger.svg)";
   }
 });
+
+
