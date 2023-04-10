@@ -731,21 +731,34 @@ body {
       ". tabs image .";
   }
 
-  .grid-container--technology {
-    grid-template-areas:
-      "title title . ."
-      "tabs tabs content image"
-      ". . . image";
-  }
-
   .grid-container--technology > .number-indicators {
     display: flex;
     flex-direction: column;
   }
 
-  .grid-container--crew > picture {
+  .grid-container--technology {
+    
+
+    grid-template-areas:
+      " title title title ."
+      "tabs content image image"
+      "tabs content image image"
+      ". . image image";
+  }
+
+
+ 
+
+  
+
+  .grid-container--technology > picture {
     grid-column: span 2;
     align-self: end;
+  }
+
+ 
+
+  .grid-container--crew > picture {
     max-width: 90%;
   }
 
