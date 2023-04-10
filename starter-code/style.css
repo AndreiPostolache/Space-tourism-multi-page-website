@@ -452,7 +452,7 @@ select {
   border-radius: 50%;
 
   border: 1px solid hsl(var(--clr-white));
-  padding: 1.5rem;
+  padding: 2rem;
   background: transparent;
   color: hsl(var(--clr-white));
   cursor: pointer;
@@ -737,27 +737,31 @@ body {
   }
 
   .grid-container--technology {
-    
-
+  
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      " title title title ."
-      "tabs content image image"
-      "tabs content image image"
-      ". . image image";
+    " title title . ."
+    "tabs content  image image"
+    "tabs content  image  image";
   }
-
-
- 
+  
+  .grid-container--technology > h1 {
+    grid-area: title;
+  }
+  
+  .grid-container--technology > .number-indicators {
+    grid-area: tabs;
+  }
+  
+  .grid-container--technology > .tab-panels {
+    grid-area: content;
+  }
+  
+  .grid-container--technology > picture {
+    grid-area: image;
+  }
 
   
-
-  .grid-container--technology > picture {
-    grid-column: span 2;
-    align-self: end;
-  }
-
- 
-
   .grid-container--crew > picture {
     max-width: 90%;
   }
