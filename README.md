@@ -16,8 +16,9 @@ The Space Tourism website is built using modern web technologies, including:
 
 ### Screenshot
 
-[![Screenshot-2023-04-11-at-15-46-32-Frontend-Mentor-Space-tourism-website.png](https://i.postimg.cc/TPgfzjFS/Screenshot-2023-04-11-at-15-46-32-Frontend-Mentor-Space-tourism-website.png)](https://postimg.cc/wtqCJN6c)
-[![Screenshot-2023-04-11-at-15-46-47-Frontend-Mentor-Space-tourism-website.png](https://i.postimg.cc/pVqRMLc2/Screenshot-2023-04-11-at-15-46-47-Frontend-Mentor-Space-tourism-website.png)](https://postimg.cc/t7ZLhpHf)
+
+![Screenshot 2023-04-11 at 15-46-32 Frontend Mentor Space tourism website](https://user-images.githubusercontent.com/108017321/231170197-4d21ae67-0461-466d-887d-4c961c556cdb.png)
+![Screenshot 2023-04-11 at 15-46-47 Frontend Mentor Space tourism website](https://user-images.githubusercontent.com/108017321/231169995-ebbc66af-4e20-4dc8-ad4f-8f6268a486db.png)
 
 
 ### Links
