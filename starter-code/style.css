@@ -759,8 +759,12 @@ body {
   
   .grid-container--technology > picture {
     grid-area: image;
+    
   }
 
+  .grid-container--technology > h1 {
+    padding-inline: 12rem;
+  }
   
   .grid-container--crew > picture {
     max-width: 90%;
@@ -768,13 +772,16 @@ body {
 
   #launch-vehicle-image {
     content: url(./assets/technology/image-launch-vehicle-portrait.jpg);
+    width: 70%;
   }
 
   #spaceport-image {
     content: url(./assets/technology/image-spaceport-portrait.jpg);
+    width: 70%;
   }
 
   #space-capsule-image {
     content: url(./assets/technology/image-space-capsule-portrait.jpg);
+    width: 70%;
   }
 }
